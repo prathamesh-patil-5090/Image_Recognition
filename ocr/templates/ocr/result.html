@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OCR Result</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+        }
+
+        .wrapper {
+            position: relative;
+            max-width: 600px;
+            width: 100%;
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .wrapper h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .output-box {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #C7BEBE;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            text-align: left;
+            max-height: 300px;
+            overflow-y: auto;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Extracted Text</h2>
+        <div class="output-box">
+            <p>{{ text }}</p>
+        </div>
+    </div>
+</body>
+</html>
